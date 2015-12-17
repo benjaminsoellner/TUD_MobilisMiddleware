@@ -1,0 +1,220 @@
+package de.tudresden.inf.rn.mobilis.media.activities;
+
+import android.app.TabActivity;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.database.Cursor;
+import android.graphics.drawable.StateListDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TabHost;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.TabHost.OnTabChangeListener;
+import android.widget.TabHost.TabContentFactory;
+import de.tudresden.inf.rn.mobilis.media.Constants;
+import de.tudresden.inf.rn.mobilis.media.R;
+import de.tudresden.inf.rn.mobilis.media.services.ApplicationInitializer;
+
+public class SendFileActivity extends TabActivity {
+	
+	public static String SEND_TO_JID = "send_to_jid";
+	public static String SEND_TO_REP = "send_to_rep";
+	private String[] paths;
+	private SendFileViewManager viewManager;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.setContentView(R.layout.send_file_tabs);
+        this.createTabs();
+    }
+    
+    @Override
+    protected void onStart() {
+    	super.onStart();
+    	ApplicationInitializer.forApplicationContext(this.getApplicationContext()).initialize();
+        this.processIntent();
+    }
+    
+    private void createTabs() {
+		Resources resources = this.getResources(); 
+		TabHost tabHost = this.getTabHost();
+		tabHost.setup();
+		// creating tabs
+		TabHost.TabSpec tabJid = tabHost.newTabSpec(SendFileActivity.SEND_TO_JID);
+		TabHost.TabSpec tabRep = tabHost.newTabSpec(SendFileActivity.SEND_TO_REP);
+		// defining tab icons
+		final int selected = android.R.attr.state_selected;
+		StateListDrawable drawableJid = new StateListDrawable();
+		drawableJid.addState(new int[]{selected}, resources.getDrawable(R.drawable.tab_send_to_jid_dark));
+		drawableJid.addState(new int[]{},         resources.getDrawable(R.drawable.tab_send_to_jid_light));
+		tabJid.setIndicator(resources.getString(R.string.tab_send_to_jid), drawableJid);
+		StateListDrawable drawableRep = new StateListDrawable();
+		drawableRep.addState(new int[]{selected}, resources.getDrawable(R.drawable.tab_send_to_rep_dark));
+		drawableRep.addState(new int[]{},         resources.getDrawable(R.drawable.tab_send_to_rep_light));
+		tabRep.setIndicator(resources.getString(R.string.tab_send_to_rep), drawableRep);
+		// defining tab contents
+		SendFileActivity.SendFileViewManager vm = new SendFileActivity.SendFileViewManager();;
+		this.viewManager = vm;
+		tabJid.setContent(vm);
+		tabRep.setContent(vm);
+		tabHost.setOnTabChangedListener(vm);
+		// adding tabs
+		tabHost.addTab(tabJid);
+		tabHost.addTab(tabRep);
+		tabHost.setCurrentTab(0);
+	}
+	
+    private void processIntent() {
+    	Intent i = this.getIntent();
+    	if (i.getAction().equals("android.intent.action.SEND")) {
+    		Uri uri = (Uri)this.getIntent().getExtras().get("android.intent.extra.STREAM");
+    		Cursor c = this.managedQuery(uri, new String[]{MediaStore.Images.ImageColumns.DATA}, null, null, null);
+    		c.moveToFirst();
+    		String path = c.getString(0);
+    		this.paths = new String[] { path };
+    	}
+    }
+
+    
+    @Override
+    protected void onResume() {
+    	super.onResume();
+    	this.viewManager.updateSendEnabledState();
+    }
+    
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = this.getMenuInflater();
+		inflater.inflate(R.menu.send_file, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		Intent i = null;
+		switch (item.getItemId()) {
+		case R.id.menu_pref:
+			i = new Intent(this, TransferPreferencesActivity.class);
+			break;
+		case R.id.menu_pref_xmpp:
+			i = new Intent(Constants.intent.PREF_XMPP);
+			break;
+		}
+		this.startActivity(i);
+		return false;
+	}
+    
+	private class SendFileViewManager
+			implements TabContentFactory, OnClickListener, OnItemClickListener, OnTabChangeListener {
+
+		private ViewGroup viewGroup;
+		private EditText descriptionEdit;
+		private ListView targetList;
+		private TextView targetText;
+		private Button sendButton;
+		private String currentTab;
+		private String[] targets;
+		
+		public SendFileViewManager() {
+			ViewGroup parent = (ViewGroup) SendFileActivity.this.findViewById(android.R.id.tabcontent); 
+			ViewGroup vg = (ViewGroup) View.inflate(
+					SendFileActivity.this,
+					R.layout.send_file_content,
+					parent);
+			this.viewGroup = vg;
+			this.descriptionEdit = (EditText)vg.findViewById(R.id.description_edit);
+			this.targetText      = (TextView)vg.findViewById(R.id.target_text);
+			ListView tl = this.targetList   = (ListView)vg.findViewById(R.id.target_list);
+			Button   sb = this.sendButton   = (Button)vg.findViewById(R.id.send_button);
+			Button   cb =                     (Button)vg.findViewById(R.id.cancel_button);
+			tl.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+			tl.setOnItemClickListener(this);
+			sb.setOnClickListener(this);
+			cb.setOnClickListener(this);
+		}
+		
+		public void updateSendEnabledState() {
+			this.sendButton.setEnabled(this.targetList.getCheckedItemPosition() != -1);
+		}
+
+		private void updateViewGroup(String currentTab) {
+			this.currentTab = currentTab;
+			Resources resources = SendFileActivity.this.getResources();
+			if (this.currentTab.equals(SendFileActivity.SEND_TO_JID)) {
+				this.retrieveJidTargets();
+				this.targetText.setText(resources.getString(R.string.pick_jid_label));
+			} else if (this.currentTab.equals(SendFileActivity.SEND_TO_REP)) {
+				this.retrieveRepTargets();
+				this.targetText.setText(resources.getString(R.string.pick_rep_label));
+			}
+			this.targetList.setAdapter( new ArrayAdapter<String>(
+					SendFileActivity.this,
+					android.R.layout.simple_list_item_single_choice,
+					this.targets) );
+			this.updateSendEnabledState();
+		}
+		
+		private void retrieveJidTargets() {
+			this.targets = new String[]{"emil@tintin/Android", "anton@tintin/Miranda"};
+		}
+		
+	    private void retrieveRepTargets() {
+    		this.targets = new String[]{"repositorybroker@tintin/MobilisMedia"};
+		}
+	    
+		/* TabContentFactory Role */
+		
+		public View createTabContent(String tag) {
+			this.updateViewGroup(tag);
+			return this.viewGroup;
+		}
+		
+		/* OnTabChangedListener Role */
+
+		public void onTabChanged(String tag) {
+			this.updateViewGroup(tag);			
+		}
+		
+		/* OnClick Role, OnItemClickListener Role */
+		
+		public void onClick(View v) {
+			ListView targetList = this.targetList;
+			if (v.equals(this.sendButton)) {
+				String target = this.targets[targetList.getCheckedItemPosition()];
+				String description = descriptionEdit.getText().toString();
+				// prepare intent
+				Intent i = null;
+				if (this.currentTab.equals(SendFileActivity.SEND_TO_JID))
+					i = new Intent(Constants.intent.SEND_TO_JID);
+				else if (this.currentTab.equals(SendFileActivity.SEND_TO_REP))
+					i = new Intent(Constants.intent.SEND_TO_REP);
+				i.putExtra(Constants.intent.extra.STR_TO, target);
+				i.putExtra(Constants.intent.extra.STR_DESCRIPTION, description);
+				i.putExtra(Constants.intent.extra.STRA_PATHS, SendFileActivity.this.paths);
+				SendFileActivity.this.startService(i);
+			}
+			SendFileActivity.this.finish(); 
+		}
+
+		public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+			this.updateSendEnabledState();
+		}
+	
+	
+	}
+	
+}

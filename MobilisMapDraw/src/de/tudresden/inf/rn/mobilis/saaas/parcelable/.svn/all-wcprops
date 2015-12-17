@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable
+END
+XMPPMessage.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPMessage.aidl
+END
+XMPPPresence.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPPresence.aidl
+END
+XMPPIQ.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPIQ.aidl
+END
+XMPPMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPMessage.java
+END
+XMPPPresence.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPPresence.java
+END
+XMPPIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/parcelable/XMPPIQ.java
+END

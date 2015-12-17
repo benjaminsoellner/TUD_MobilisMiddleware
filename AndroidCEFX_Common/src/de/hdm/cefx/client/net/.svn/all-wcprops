@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn-students/AndroidMoco/!svn/ver/48/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net
+END
+DeleteExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/DeleteExtension.java
+END
+OutgoingServerConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/OutgoingServerConnectionHandler.java
+END
+InsertExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/InsertExtension.java
+END
+UpdateDeleteExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateDeleteExtension.java
+END
+UpdateInsertExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateInsertExtension.java
+END
+OperationXMLTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/OperationXMLTransformer.java
+END
+UpdateSetExtensionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateSetExtensionProvider.java
+END
+OutgoingClientConnectionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/OutgoingClientConnectionHandler.java
+END
+DeleteExtensionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/DeleteExtensionProvider.java
+END
+CEFXSessionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/CEFXSessionImpl.java
+END
+InsertExtensionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/InsertExtensionProvider.java
+END
+UpdateDeleteExtensionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateDeleteExtensionProvider.java
+END
+ClientConnection_SStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/ClientConnection_SStub.java
+END
+UpdateInsertExtensionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateInsertExtensionProvider.java
+END
+NetworkControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/48/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/NetworkControllerImpl.java
+END
+CEFXSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/CEFXSession.java
+END
+RemoteOperationExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/RemoteOperationExecutor.java
+END
+UpdateSetExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/UpdateSetExtension.java
+END
+OperationExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/OperationExtension.java
+END
+NetworkController.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/NetworkController.java
+END
+ClientConnection_CStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/client/net/ClientConnection_CStub.java
+END

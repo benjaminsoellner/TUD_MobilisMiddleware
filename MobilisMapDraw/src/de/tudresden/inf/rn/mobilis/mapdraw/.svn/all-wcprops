@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw
+END
+ViewUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/ViewUpdater.java
+END
+PreferencesClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/PreferencesClient.java
+END
+PointCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/PointCollector.java
+END
+PaintFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/PaintFactory.java
+END
+PathBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/PathBuilder.java
+END
+MapDrawKMLModelUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/49/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/MapDrawKMLModelUpdater.java
+END
+DocumentFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/DocumentFactory.java
+END
+MapDrawActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/MapDrawActivity.java
+END
+GeoHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/GeoHelper.java
+END
+MapDrawViewUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/MapDrawViewUpdater.java
+END
+PrerenderingLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/PrerenderingLayer.java
+END
+BackgroundOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/BackgroundOverlay.java
+END
+DrawingObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/DrawingObject.java
+END
+ModelUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/ModelUpdater.java
+END
+Monitoring.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/Monitoring.java
+END
+CollabEditingTester.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn-students/AndroidMoco/!svn/ver/49/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/CollabEditingTester.java
+END
+GeoPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/GeoPath.java
+END
+MapDrawExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/MapDrawExtension.java
+END
+XMPPController.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/XMPPController.java
+END
+MXAController.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/MXAController.java
+END
+CachingLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/CachingLayer.java
+END
+DrawingObjectsStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/DrawingObjectsStorage.java
+END
+DrawingOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/mapdraw/DrawingOverlay.java
+END

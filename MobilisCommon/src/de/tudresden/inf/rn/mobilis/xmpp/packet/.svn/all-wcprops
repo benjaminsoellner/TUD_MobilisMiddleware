@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet
+END
+QueryGroupsIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/QueryGroupsIQ.java
+END
+MonitoringIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/MonitoringIQ.java
+END
+LocationIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/LocationIQ.java
+END
+NetworkIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/NetworkIQ.java
+END
+PubSubPacketExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/PubSubPacketExtension.java
+END
+JoinGroupIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/JoinGroupIQ.java
+END
+CreateGroupIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/CreateGroupIQ.java
+END
+SettingsIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/SettingsIQ.java
+END
+BuddylistIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/BuddylistIQ.java
+END
+GeolocPacketExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn-students/AndroidMoco/!svn/ver/42/trunk/MobilisCommon/src/de/tudresden/inf/rn/mobilis/xmpp/packet/GeolocPacketExtension.java
+END

@@ -1,0 +1,50 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+import java.io.File;
+
+import android.os.RemoteException;
+import de.tudresden.inf.rn.mobilis.saaas.IXMPPService;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+
+public class OutgoingFileTransfer extends FileTransfer {
+
+	private File localFile;
+	
+	public OutgoingFileTransfer(FileTransferManager manager, IXMPPService xmppService, int id, XMPPFile xmppFile) {
+		super(manager, id, xmppFile);
+		this.xmppFile = xmppFile;
+		this.localFile = new File(this.xmppFile.path);
+	}
+	
+	@Override
+	public long getTotalSize() {
+		return this.localFile.length();
+	}
+
+	@Override
+	public boolean initiate() {
+		return super.initiate();
+	}
+
+	public void proceedInitiation() {
+		try {
+			synchronized (OutgoingFileTransfer.this) {
+				this.fileTransferManager.getXmppService().sendFile(this.ackMessenger, this.id, this.xmppFile);
+			}
+		} catch (RemoteException e) {
+			this.notifyFailed(this, -2, "Could not initiate file transfer.");
+		}
+	}
+	
+	@Override
+	public boolean terminate() {
+		// TODO To be implemented
+		return false;
+	}
+
+	@Override
+	public int getBlockSize() {
+		return this.xmppFile.blockSize;
+	}
+	
+}

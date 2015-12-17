@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media
+END
+RepositoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/RepositoryService.java
+END
+RepositoryType.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/RepositoryType.java
+END
+ContentStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn-students/AndroidMoco/!svn/ver/60/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/ContentStore.java
+END
+ContentItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn-students/AndroidMoco/!svn/ver/60/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/ContentItem.java
+END
+ContentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/ContentService.java
+END
+RepositoryCube.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/60/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/RepositoryCube.java
+END
+RepositoryItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/60/trunk/MobilisServer/src/de/tudresden/inf/rn/mobilis/server/services/media/RepositoryItem.java
+END

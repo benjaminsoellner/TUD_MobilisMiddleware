@@ -1,0 +1,197 @@
+package de.tudresden.inf.rn.mobilis.media.views;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.database.DataSetObserver;
+import android.os.RemoteException;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import de.tudresden.inf.rn.mobilis.media.Constants;
+import de.tudresden.inf.rn.mobilis.media.R;
+import de.tudresden.inf.rn.mobilis.media.parcelables.FileTransferInfo;
+import de.tudresden.inf.rn.mobilis.media.services.IFileTransferService;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+
+public class FileTransferAdapter implements ListAdapter {
+		
+	private List<FileTransferInfo> fileTransferInfos;
+	private List<DataSetObserver> dataSetObservers;
+	private Context context;
+	
+	public FileTransferAdapter(Context c) {
+		this.context = c;
+		this.fileTransferInfos = new LinkedList<FileTransferInfo>();
+		this.dataSetObservers = new LinkedList<DataSetObserver>();
+	}
+	
+	public void fillWithItems(IFileTransferService service, int direction) throws RemoteException {
+		int ids[] = service.getIds(direction);
+		List<FileTransferInfo> infos = this.fileTransferInfos;
+		infos.clear();
+		for (int id: ids) {
+			FileTransferInfo info = service.getFileTransferInfo(id);
+			infos.add(info);
+		}
+		this.notifyDataSetChanged();
+	}
+	
+	public boolean areAllItemsEnabled() {
+		return true;
+	}
+
+	public boolean isEnabled(int position) {
+		return true;
+	}
+
+	public int getCount() {
+		return this.fileTransferInfos.size();
+	}
+
+	public FileTransferInfo getItem(int position) {
+		return this.fileTransferInfos.get(position);
+	}
+
+	public long getItemId(int position) {
+		return this.fileTransferInfos.get(position).id;
+	}
+
+	public int getItemViewType(int position) {
+		return 0;
+	}
+
+	public int getViewTypeCount() {
+		return 1;
+	}
+
+	public boolean hasStableIds() {
+		return false;
+	}
+
+	public boolean isEmpty() {
+		return this.fileTransferInfos.size() == 0;
+	}
+	
+	public View getView(int position, View target, ViewGroup parentView) {
+		Context context = this.context;
+		Resources resources = context.getResources();
+		FileTransferInfo source = this.getItem(position);
+		XMPPFile sourceFile = source.xmppFile;
+		FileTransferAdapter.ViewHolder targetHolder; 
+		// recycle view
+		if (target == null) {
+			target = (ViewGroup)View.inflate(context, R.layout.file_transfer_row, null);
+			targetHolder = new FileTransferAdapter.ViewHolder();
+			targetHolder.filename = (TextView) target.findViewById(R.id.transfer_row_filename_text);
+			targetHolder.toFrom = (TextView) target.findViewById(R.id.transfer_row_tofrom_text);
+			targetHolder.jid = (TextView) target.findViewById(R.id.transfer_row_jid_text); 
+			targetHolder.state = (TextView) target.findViewById(R.id.transfer_row_state_text);
+			targetHolder.progress = (ProgressBar) target.findViewById(R.id.transfer_row_progress);
+			target.setTag(targetHolder);
+		} else {
+			targetHolder = (FileTransferAdapter.ViewHolder) target.getTag();
+		}
+		// Set common values
+		targetHolder.filename.setText(sourceFile.path);
+		if (source.direction == Constants.enumeration.DIRECTION_OUT) {
+			targetHolder.toFrom.setText(resources.getString(R.string.to_label));
+			targetHolder.jid.setText(sourceFile.to);
+		} else if (source.direction == Constants.enumeration.DIRECTION_IN) {
+			targetHolder.toFrom.setText(resources.getString(R.string.from_label));
+			targetHolder.jid.setText(sourceFile.from);
+		}
+		// Set values depending on state
+		String pattern, text;
+		switch (source.state) {
+			case Constants.enumeration.STATE_REQUESTED:
+				targetHolder.progress.setVisibility(View.VISIBLE);
+				targetHolder.progress.setIndeterminate(true);
+				targetHolder.state.setText(
+						resources.getString(R.string.transfer_state_asking));
+				break;
+			case Constants.enumeration.STATE_STANDBY:
+			case Constants.enumeration.STATE_INITIATED:
+			case Constants.enumeration.STATE_NEGOTIATED:
+				targetHolder.progress.setVisibility(View.VISIBLE);
+				targetHolder.progress.setIndeterminate(true);
+				targetHolder.state.setText(
+						resources.getString(R.string.transfer_state_waiting));
+				break;
+			case Constants.enumeration.STATE_INPROGRESS:
+				targetHolder.progress.setVisibility(View.VISIBLE);
+				targetHolder.progress.setIndeterminate(false);
+				targetHolder.progress.setMax(100);
+				targetHolder.progress.setProgress((int)Math.ceil(
+						(double)sourceFile.blockSize*source.blocksTransferred
+							/sourceFile.size ));
+				pattern = resources.getString(R.string.transfer_state_ongoing);
+				text = String.format(pattern,
+						source.blocksTransferred*sourceFile.blockSize/1024,
+						sourceFile.size/1024);
+				targetHolder.state.setText(text);
+				break;
+			case Constants.enumeration.STATE_FAILED:
+				targetHolder.progress.setVisibility(View.GONE);
+				pattern = resources.getString(R.string.transfer_state_failed);
+				targetHolder.state.setText(
+						resources.getString(R.string.transfer_state_failed));
+				break;
+			case Constants.enumeration.STATE_FINISHED:
+				targetHolder.progress.setVisibility(View.GONE);
+				targetHolder.state.setText(
+						resources.getString(R.string.transfer_state_finished));
+				break;
+		}
+		return target;
+	}
+	
+	public void registerDataSetObserver(DataSetObserver observer) {
+		this.dataSetObservers.add(observer);
+	}
+	
+	public void unregisterDataSetObserver(DataSetObserver observer) {
+		this.dataSetObservers.remove(observer);
+	}
+	
+	private void updateFileTransferInfo(FileTransferInfo info) {
+		List<FileTransferInfo> infos = this.fileTransferInfos;
+		int infosSize = fileTransferInfos.size();
+		int infoId = info.id;
+		for (int infoIndex = 0; infoIndex < infosSize; infoIndex++) {
+			if (infos.get(infoIndex).id == infoId) {
+				infos.set(infoIndex, info);
+				return;
+			}
+		}
+		infos.add(0, info);
+	}
+	
+	public void notifyDataSetChanged() {
+		for (DataSetObserver observer: this.dataSetObservers)
+			observer.onChanged();
+	}
+
+	public void notifyDataSetChanged(FileTransferInfo info) {
+		this.updateFileTransferInfo(info);
+		this.notifyDataSetChanged();
+	}
+	
+	public void notifyDataSetInvalidated() {
+		for (DataSetObserver observer: this.dataSetObservers)
+			observer.onInvalidated();
+	}
+	
+	private static class ViewHolder {
+		public TextView filename;
+		public TextView toFrom;
+		public TextView jid; 
+		public TextView state;
+		public ProgressBar progress;
+	}
+	
+}

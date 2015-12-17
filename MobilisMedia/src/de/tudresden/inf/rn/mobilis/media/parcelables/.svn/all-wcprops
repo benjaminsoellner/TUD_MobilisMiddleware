@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-students/AndroidMoco/!svn/ver/43/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables
+END
+TransferParcel.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/TransferParcel.aidl
+END
+ConditionParcel.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/ConditionParcel.aidl
+END
+RepositoryItemParcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/RepositoryItemParcel.java
+END
+TransferParcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/TransferParcel.java
+END
+ConditionParcel.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/ConditionParcel.java
+END
+RepositoryItemParcel.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/parcelables/RepositoryItemParcel.aidl
+END

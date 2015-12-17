@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi
+END
+ExtensibleClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ExtensibleClient.java
+END
+BundleStoryTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/BundleStoryTemplate.java
+END
+FeedFacebookPhoto.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FeedFacebookPhoto.java
+END
+FacebookWebappHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookWebappHelper.java
+END
+ApplicationProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ApplicationProperty.java
+END
+FacebookJaxbRestClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookJaxbRestClient.java
+END
+FeedUserPhoto.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FeedUserPhoto.java
+END
+FacebookExtendedPerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookExtendedPerm.java
+END
+AssociationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/AssociationType.java
+END
+IFacebookRestClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/IFacebookRestClient.java
+END
+TemplatizedAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/TemplatizedAction.java
+END
+FacebookWebRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookWebRequest.java
+END
+ProfileInfoField.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ProfileInfoField.java
+END
+MarketListingStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/MarketListingStatus.java
+END
+XMLTestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/XMLTestUtils.java
+END
+MarketplaceListing.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/MarketplaceListing.java
+END
+IFacebookMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/IFacebookMethod.java
+END
+ProfileFieldItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ProfileFieldItem.java
+END
+BundleActionLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/BundleActionLink.java
+END
+MarketListingSubcategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/MarketListingSubcategory.java
+END
+PhotoTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/PhotoTag.java
+END
+AllocationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/AllocationType.java
+END
+FacebookXmlRestClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookXmlRestClient.java
+END
+AssociationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/AssociationInfo.java
+END
+FacebookSignatureUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookSignatureUtil.java
+END
+FacebookJsonRestClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookJsonRestClient.java
+END
+PageProfileField.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/PageProfileField.java
+END
+ProfileField.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ProfileField.java
+END
+IPair.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/IPair.java
+END
+FeedImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FeedImage.java
+END
+BatchQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/BatchQuery.java
+END
+FacebookMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookMethod.java
+END
+MarketListingCategory.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/MarketListingCategory.java
+END
+MarketListing.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/MarketListing.java
+END
+IFeedImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/IFeedImage.java
+END
+Metric.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/Metric.java
+END
+ErrorCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ErrorCode.java
+END
+ApplicationPropertySet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/ApplicationPropertySet.java
+END
+PropertyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/PropertyType.java
+END
+Permission.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/Permission.java
+END
+FacebookException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookException.java
+END
+FacebookParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookParam.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/Pair.java
+END
+FacebookNamespaceContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/com/google/code/facebookapi/FacebookNamespaceContext.java
+END

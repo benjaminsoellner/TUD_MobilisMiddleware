@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/services/callbacks
+END
+ISubscribeCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/services/callbacks/ISubscribeCallback.aidl
+END
+IInvitationCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/services/callbacks/IInvitationCallback.aidl
+END
+IFileAcceptCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/services/callbacks/IFileAcceptCallback.aidl
+END
+IFileCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/services/callbacks/IFileCallback.aidl
+END

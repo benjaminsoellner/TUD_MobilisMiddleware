@@ -1,0 +1,225 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.Messenger;
+import android.os.RemoteException;
+import de.tudresden.inf.rn.mobilis.media.Constants;
+import de.tudresden.inf.rn.mobilis.saaas.XMPPConstants;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+
+
+public abstract class FileTransfer {
+
+	protected Messenger ackMessenger;
+	protected int state;
+	protected int blocksTransferred;
+	protected boolean isInitiated;
+	protected final int id;
+	protected XMPPFile xmppFile;
+	protected FileTransferManager fileTransferManager;
+	
+	private Set<FileTransferObserver> fileTransferObservers = new HashSet<FileTransferObserver>();
+	
+	static ExecutorService transferThreads = Executors.newCachedThreadPool();
+	
+	public FileTransfer(FileTransferManager manager, int id, XMPPFile xmppFile) {
+		this.fileTransferManager = manager;
+		this.xmppFile = xmppFile;
+		this.id = id;
+		this.blocksTransferred = -1;
+		this.state = Constants.enumeration.STATE_STANDBY;
+	}
+		
+	/*
+	 * Observer-Pattern
+	 */
+	
+	protected void notifyInitiated(FileTransfer sender) {
+		this.state = Constants.enumeration.STATE_INITIATED;
+		this.blocksTransferred = 0;
+		for (FileTransferObserver fto: this.fileTransferObservers)
+			fto.initiated(sender);
+	}
+	
+	protected void notifyNegotiation(FileTransfer sender) {
+		this.state = Constants.enumeration.STATE_NEGOTIATED;
+		this.blocksTransferred = 0;
+		for (FileTransferObserver fto: this.fileTransferObservers)
+			fto.negotiation(sender);
+	}
+	
+	protected void notifyBlockTransferred(FileTransfer sender, int block) {
+		this.state = Constants.enumeration.STATE_INPROGRESS;
+		this.blocksTransferred = block;
+		for (FileTransferObserver fto: this.fileTransferObservers)
+			fto.blockTransferred(sender, block);
+	}
+	
+	protected void notifyFinished(FileTransfer sender) {
+		this.state = Constants.enumeration.STATE_FINISHED;
+		for (FileTransferObserver fto: this.fileTransferObservers)
+			fto.finished(sender);
+		this.fileTransferManager.removeFileTransfer(this);
+	}
+	
+	protected void notifyFailed(FileTransfer sender, int reason, String message) {
+		this.state = Constants.enumeration.STATE_FAILED;
+		for (FileTransferObserver fto: this.fileTransferObservers)
+			fto.failed(sender, reason, message);
+		this.fileTransferManager.removeFileTransfer(this);
+	}
+
+	public void registerFileTransferObserver(FileTransferObserver fto) {
+		this.fileTransferObservers.add(fto);
+	}
+	
+	public void unregisterFileTransferObserver(FileTransferObserver fto) {
+		this.fileTransferObservers.remove(fto);
+	}
+	
+	/*
+	 * Abstract Methods
+	 */
+	
+	abstract public long getTotalSize();
+	abstract public int getBlockSize();
+	abstract protected void proceedInitiation();
+	abstract public boolean terminate();
+	
+	protected boolean initiate() {
+		Thread t = new Thread(new FileTransfer.TransferInitiator());
+		t.setName("MobilisMedia TransferInitiatorThread #"+this.id);
+		FileTransfer.transferThreads.execute(t);
+		return true;
+	}
+	
+	protected void cancelInitiation() {
+		this.notifyFailed(this, -1, "Could not connect to XMPP server.");
+	}
+	
+	/*
+	 * Methods derived from abstract Methods
+	 */
+	
+	public int getId() {
+		return this.id;
+	}
+
+	public double getPercentage() {
+		double percentage = this.getBlockSize() * (double)this.blocksTransferred / this.getTotalSize() * 100.0;
+		if (percentage > 100.0)
+			return 100.0;
+		else if (percentage < 0.0)
+			return 0.0;
+		else
+			return percentage;
+	}
+	
+	/*
+	 * Getters and Setters
+	 */
+	
+	public int getState() {
+		return state;
+	}
+	
+	public XMPPFile getXmppFile() {
+		return xmppFile;
+	}
+	
+	public int getBlocksTransferred() {
+		return this.blocksTransferred;
+	}
+
+	public void setBlocksTransferred(int blocksTransferred) {
+		this.blocksTransferred = blocksTransferred;
+	}
+
+	private class TransferInitiator implements Runnable {
+		public void run() {
+			FileTransfer owner = FileTransfer.this;
+			synchronized (this) {
+				Thread t = new Thread(new FileTransfer.TransferWatcher(this));
+				t.setName("MobilisMedia TransferWatcherThread #"+owner.id);
+				FileTransfer.transferThreads.execute(t);
+				try {
+					this.wait();
+				} catch (InterruptedException e) {
+					return;
+				}
+			}
+			try {
+				owner.fileTransferManager.getXmppService().connect(owner.ackMessenger);
+			} catch (RemoteException e1) {
+				return;
+			}
+		}
+	}
+	
+	private class TransferWatcher implements Runnable {
+		private Runnable initiator;
+		public TransferWatcher(Runnable initiator) {
+			this.initiator = initiator; 
+		}
+		public void run() {
+			FileTransfer owner = FileTransfer.this;
+			Runnable initiator = this.initiator;
+			try {
+				Looper.prepare();
+				owner.ackMessenger = new Messenger(new TransferHandler());
+				synchronized (initiator) {
+					initiator.notify();
+				}
+				Looper.loop();
+			} finally {
+				synchronized (initiator) {
+					initiator.notify();
+				}
+			}
+		}
+	}
+	
+	private class TransferHandler extends Handler {
+		
+		@Override
+		public void handleMessage(Message msg) {
+			FileTransfer owner = FileTransfer.this;
+			if (msg.what == XMPPConstants.MSG_CONNECT) {
+				if (msg.arg1 == XMPPConstants.MSG_STATUS_SUCCESS) {
+					owner.proceedInitiation();
+				} else {
+					owner.cancelInitiation();
+				}
+			} else if (msg.what == XMPPConstants.MSG_SEND_FILE 
+					&& msg.arg2 == owner.id) {
+				if (msg.arg1 == XMPPConstants.MSG_STATUS_SUCCESS) {
+					Bundle b = msg.getData();
+					int blocksTransferred = b.getInt("INT_BLOCKSTRANSFERRED");
+					if (blocksTransferred == -1)
+						owner.notifyNegotiation(owner);
+					else
+						owner.notifyBlockTransferred(owner, blocksTransferred);
+				} else if (msg.arg1 == XMPPConstants.MSG_STATUS_DELIVERED) {
+					owner.notifyFinished(owner);
+					Looper.myLooper().quit();
+				} else if (msg.arg1 == XMPPConstants.MSG_STATUS_ERROR) {
+					Bundle b = msg.getData();
+					String message = b.getString("STR_ERRORMESSAGE");
+					int reason = b.getInt("INT_ERRORCODE");
+					owner.notifyFailed(owner, reason, message);
+					Looper.myLooper().quit();
+				}
+			}
+		}
+		
+	}
+	
+}

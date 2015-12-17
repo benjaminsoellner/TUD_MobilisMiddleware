@@ -1,0 +1,120 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+import android.os.RemoteException;
+import android.util.Log;
+import android.util.SparseArray;
+import de.tudresden.inf.rn.mobilis.saaas.IXMPPFileCallback;
+import de.tudresden.inf.rn.mobilis.saaas.IXMPPService;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+
+public class FileTransferManager {
+	
+	private SparseArray<OutgoingFileTransfer> outgoingTransfers;
+	private SparseArray<IncomingFileTransfer> incomingTransfers;
+	private List<FileTransferRequestObserver> fileTransferRequestObservers;
+	private int currentTransferId;
+	private IXMPPService xmppService;
+	private IXMPPFileCallback fileCallback = new FileTransferManager.IncomingFileCallback();
+	
+	public FileTransferManager(IXMPPService xmppService) {
+		this.xmppService = xmppService;
+		try {
+			this.xmppService.registerFileCallback(this.fileCallback);
+		} catch (RemoteException e) {
+			Log.e(FileTransferManager.class.getName(), "No connection to XMPP service");
+		}
+		this.outgoingTransfers = new SparseArray<OutgoingFileTransfer>();
+		this.incomingTransfers = new SparseArray<IncomingFileTransfer>();
+		this.fileTransferRequestObservers = Collections.synchronizedList(
+				new LinkedList<FileTransferRequestObserver>() );
+		this.currentTransferId = 0;
+	}
+	
+	
+	public OutgoingFileTransfer addOutgoingFileTransfer(XMPPFile file) {
+		OutgoingFileTransfer ot = new OutgoingFileTransfer(
+				this,
+				this.xmppService,
+				this.currentTransferId,
+				file);
+		this.outgoingTransfers.append(this.currentTransferId, ot);
+		this.currentTransferId++;
+		return ot;
+	}
+	
+	public void removeFileTransfer(FileTransfer ft) {
+		int id = ft.id;
+		SparseArray<OutgoingFileTransfer> ots = this.outgoingTransfers;
+		SparseArray<IncomingFileTransfer> its = this.incomingTransfers;
+		if (ots.get(id) != null) ots.remove(id);
+		else if (its.get(id) != null) its.remove(id);
+	}
+	
+	public void registerFileTransferRequestObserver(FileTransferRequestObserver ftro) {
+		this.fileTransferRequestObservers.add(ftro);
+	}
+	
+	public void unregisterFileTransferRequestObserver(FileTransferRequestObserver ftro) {
+		this.fileTransferRequestObservers.remove(ftro);
+	}
+	
+	public void notifyRequested(FileTransfer fileTransfer) {
+		for (FileTransferRequestObserver ftro: this.fileTransferRequestObservers)
+			ftro.requested(fileTransfer);
+	}
+	
+	public int getNumberOfTransfers() {
+		return this.outgoingTransfers.size();
+	}
+	
+	private int[] getFileTransferIDs(final SparseArray<?> transfers) {
+		final int size = transfers.size();
+		int result[] = new int[size];
+		for (int i = 0; i < size; i++)
+			result[i] = transfers.keyAt(i);
+		return result;
+	}
+	
+	public int[] getOutgoingFileTransferIDs() {
+		return getFileTransferIDs(this.outgoingTransfers);
+	}
+	
+	public int[] getIncomingFileTransferIDs() {
+		return getFileTransferIDs(this.incomingTransfers);
+	}
+	
+	public FileTransfer getFileTransferByID(int id) {
+		if (this.outgoingTransfers.get(id) != null)
+			return this.outgoingTransfers.get(id);
+		else
+			return this.incomingTransfers.get(id);
+	}
+	
+	public int getCurrentTransferId() {
+		return this.currentTransferId;
+	}
+	
+	public IXMPPService getXmppService() {
+		return this.xmppService;
+	}	
+	
+	private class IncomingFileCallback extends IXMPPFileCallback.Stub {
+		public void processFile(int requestKey, XMPPFile file)
+				throws RemoteException {
+			FileTransferManager owner = FileTransferManager.this;
+			IncomingFileTransfer it = new IncomingFileTransfer(
+					owner,
+					owner.currentTransferId,
+					requestKey,
+					file);
+			owner.incomingTransfers.append(it.id, it);
+			owner.currentTransferId++;
+			owner.notifyRequested(it);
+		}
+	}
+
+}

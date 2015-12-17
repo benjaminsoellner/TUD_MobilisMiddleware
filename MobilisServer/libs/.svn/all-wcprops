@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn-students/AndroidMoco/!svn/ver/65/trunk/MobilisServer/libs
+END
+slf4j-jdk14-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/slf4j-jdk14-1.5.8.jar
+END
+ant-antlr-1.6.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/ant-antlr-1.6.5.jar
+END
+smackx-debug.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/smackx-debug.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/dom4j-1.6.1.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/commons-collections-3.2.1.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/jdom.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/servlet-api.jar
+END
+hibernate-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/hibernate-annotations.jar
+END
+smack.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/smack.jar
+END
+javassist-3.9.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/javassist-3.9.0.GA.jar
+END
+hibernate-commons-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/hibernate-commons-annotations.jar
+END
+ejb3-persistence.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/ejb3-persistence.jar
+END
+hibernate-entitymanager.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/hibernate-entitymanager.jar
+END
+javassist.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/javassist.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/jta-1.1.jar
+END
+json-20070829.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/json-20070829.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/hibernate3.jar
+END
+smackx.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/smackx.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/commons-collections-3.1.jar
+END
+persistence-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/persistence-api-1.0.jar
+END
+hibernate-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/hibernate-core.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/antlr-2.7.6.jar
+END
+appframework-1.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/appframework-1.0.3.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/commons-logging-1.1.1.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/commons-lang-2.4.jar
+END
+swing-worker-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/swing-worker-1.1.jar
+END
+xpp3-1.1.4c.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/xpp3-1.1.4c.jar
+END
+smackx-jingle.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/smackx-jingle.jar
+END
+facebook-java-api-schema-2.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/facebook-java-api-schema-2.0.4.jar
+END
+commons-beanutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/libs/commons-beanutils.jar
+END
+slf4j-api-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/slf4j-api-1.5.8.jar
+END
+mysql-connector-java-5.1.10-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn-students/AndroidMoco/!svn/ver/63/trunk/MobilisServer/libs/mysql-connector-java-5.1.10-bin.jar
+END

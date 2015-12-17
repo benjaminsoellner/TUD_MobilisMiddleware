@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas
+END
+XMPPRemoteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/XMPPRemoteService.java
+END
+IXMPPService.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/IXMPPService.aidl
+END
+IXMPPMessageCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/IXMPPMessageCallback.aidl
+END
+IXMPPIQCallback.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/saaas/IXMPPIQCallback.aidl
+END

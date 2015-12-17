@@ -1,0 +1,66 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+import android.os.RemoteException;
+import de.tudresden.inf.rn.mobilis.media.Constants;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+
+public class IncomingFileTransfer extends FileTransfer {
+
+	private boolean initiated; 
+	private int key;
+	private String path;
+	private int blockSize;
+	
+	public IncomingFileTransfer(FileTransferManager fileTransferManager, int id, int key,
+			XMPPFile xmppFile) {
+		super(fileTransferManager, id, xmppFile);
+		this.state = Constants.enumeration.STATE_REQUESTED;
+		this.key = key;
+		this.xmppFile = xmppFile;
+		this.initiated = false;
+	}
+	
+	@Override
+	public long getTotalSize() {
+		return this.xmppFile.size;
+	}
+
+	public boolean initiate(String path, int blockSize) {
+		this.path = path;
+		this.blockSize = blockSize;
+		return this.initiate();
+	}
+		
+	public void proceedInitiation() {
+		try {
+			this.fileTransferManager.getXmppService().acceptFileTransferRequest(this.ackMessenger,
+					this.id, this.path, this.blockSize, this.key);
+		} catch (RemoteException e) {
+			this.notifyFailed(this, -2, "Could not initiate file transfer.");
+		}
+		this.initiated = true;
+	}
+
+
+	@Override
+	public boolean terminate() {
+		if (this.initiated) {
+			// TODO To be implemented
+			return false;
+		} else {
+			try {
+				this.fileTransferManager.getXmppService().denyFileTransferRequest(this.key);
+				this.notifyFailed(this, -4, "Transfer canceled by user.");
+				return true;
+			} catch (RemoteException e) {
+				return false;
+			}
+		}
+	}
+
+	@Override
+	public int getBlockSize() {
+		return this.blockSize;
+	}
+
+}

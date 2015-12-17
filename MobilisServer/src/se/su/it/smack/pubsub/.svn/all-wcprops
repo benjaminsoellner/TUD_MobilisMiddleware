@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub
+END
+PubSub.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSub.java
+END
+PubSubEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSubEvent.java
+END
+PubSubProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSubProducer.java
+END
+PubSubEventListenerSupport.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSubEventListenerSupport.java
+END
+PubSubEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSubEventListener.java
+END
+PubSubXEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/PubSubXEvent.java
+END

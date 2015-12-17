@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize
+END
+HTMLdtd.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/HTMLdtd.java
+END
+SerializerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/SerializerFactory.java
+END
+EncodingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/EncodingInfo.java
+END
+LineSeparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/LineSeparator.java
+END
+OutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/OutputFormat.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/Serializer.java
+END
+Encodings.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/Encodings.java
+END
+DOMSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/DOMSerializer.java
+END
+TextSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/TextSerializer.java
+END
+Method.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/Method.java
+END
+HTMLEntities.res
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/HTMLEntities.res
+END
+Printer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/Printer.java
+END
+SerializerFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/SerializerFactoryImpl.java
+END
+BaseMarkupSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/BaseMarkupSerializer.java
+END
+IndentPrinter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/IndentPrinter.java
+END
+XHTMLSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/XHTMLSerializer.java
+END
+XMLSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/XMLSerializer.java
+END
+ElementState.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/ElementState.java
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/Makefile
+END
+SieveEncodingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/SieveEncodingInfo.java
+END
+HTMLSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/org/apache/xml/serialize/HTMLSerializer.java
+END

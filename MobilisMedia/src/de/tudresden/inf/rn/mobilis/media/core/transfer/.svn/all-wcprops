@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer
+END
+TransferManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/TransferManager.java
+END
+OutgoingTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/OutgoingTransfer.java
+END
+RepositoryTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/RepositoryTransfer.java
+END
+Transfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/Transfer.java
+END
+TransferRequestObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/TransferRequestObserver.java
+END
+IncomingTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/IncomingTransfer.java
+END
+TransferObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/media/core/transfer/TransferObserver.java
+END

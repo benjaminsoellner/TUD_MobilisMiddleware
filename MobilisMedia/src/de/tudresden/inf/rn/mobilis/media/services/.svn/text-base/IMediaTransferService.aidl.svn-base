@@ -1,0 +1,22 @@
+package de.tudresden.inf.rn.mobilis.media.services;
+
+import android.os.Messenger;
+import de.tudresden.inf.rn.mobilis.media.parcelables.FileTransferInfo;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPMessage;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPIQ;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPPresence;
+import de.tudresden.inf.rn.mobilis.saaas.parcelable.XMPPFile;
+import de.tudresden.inf.rn.mobilis.saaas.IXMPPMessageCallback;
+
+interface IFileTransferService {
+
+	int startTransferToJid(in XMPPFile file);
+	boolean acceptTransferFromJid(in String filename, in int id);
+	boolean denyTransferFromJid(in int id);
+	
+	int[] getIds(in int direction);
+	FileTransferInfo getFileTransferInfo(in int id);
+	void registerFileTransferMessenger(in Messenger messenger, in int direction);
+	void unregisterFileTransferMessenger(in Messenger messenger, in int direction);
+
+}

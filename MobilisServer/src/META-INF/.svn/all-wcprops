@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/META-INF
+END
+hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/META-INF/hibernate.xml
+END
+smack.providers
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/META-INF/smack.providers
+END
+MobilisSettings.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/66/trunk/MobilisServer/src/META-INF/MobilisSettings.xsd
+END
+MobilisSettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisServer/src/META-INF/MobilisSettings.xml
+END

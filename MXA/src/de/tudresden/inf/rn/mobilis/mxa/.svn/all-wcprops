@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-students/AndroidMoco/!svn/ver/72/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa
+END
+XMPPRemoteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa/XMPPRemoteService.java
+END
+IXMPPService.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-students/AndroidMoco/!svn/ver/72/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa/IXMPPService.aidl
+END
+MXAController.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn-students/AndroidMoco/!svn/ver/72/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa/MXAController.java
+END
+MXAListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-students/AndroidMoco/!svn/ver/72/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa/MXAListener.java
+END
+ConstMXA.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn-students/AndroidMoco/!svn/ver/72/trunk/MXA/src/de/tudresden/inf/rn/mobilis/mxa/ConstMXA.java
+END

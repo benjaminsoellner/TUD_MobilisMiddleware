@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements
+END
+PublishElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/PublishElement.java
+END
+EntityElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/EntityElement.java
+END
+SubscribeOptionsElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/SubscribeOptionsElement.java
+END
+ItemElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/ItemElement.java
+END
+PubSubElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/PubSubElement.java
+END
+ItemsElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/ItemsElement.java
+END
+ConfigureElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/ConfigureElement.java
+END
+SubscribeElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/SubscribeElement.java
+END
+DeleteElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/DeleteElement.java
+END
+PurgeElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/PurgeElement.java
+END
+CreateElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/CreateElement.java
+END
+RetractElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/RetractElement.java
+END
+SubscriptionElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/37/trunk/MobilisServer/src/se/su/it/smack/pubsub/elements/SubscriptionElement.java
+END

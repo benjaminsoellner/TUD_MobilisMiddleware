@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness
+END
+AbstractAwarenessWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/AbstractAwarenessWidget.java
+END
+DefaultAwarenessControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/DefaultAwarenessControllerImpl.java
+END
+AwarenessEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/AwarenessEvent.java
+END
+AwarenessController.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/AwarenessController.java
+END
+AwarenessWidget.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/AwarenessWidget.java
+END
+AwarenessControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/awareness/AwarenessControllerImpl.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable
+END
+XMPPMessage.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPMessage.aidl
+END
+XMPPPresence.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPPresence.aidl
+END
+XMPPIQ.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPIQ.aidl
+END
+XMPPMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPMessage.java
+END
+XMPPPresence.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPPresence.java
+END
+XMPPIQ.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/src/de/tudresden/inf/rn/mobilis/mxa/parcelable/XMPPIQ.java
+END

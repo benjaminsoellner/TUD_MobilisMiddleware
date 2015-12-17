@@ -1,0 +1,11 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+public interface FileTransferObserver {
+
+	public void negotiation(FileTransfer sender);
+	public void blockTransferred(FileTransfer sender, long block);
+	public void finished(FileTransfer sender);
+	public void failed(FileTransfer sender, int reason, String message);
+	public void initiated(FileTransfer sender);
+	
+}

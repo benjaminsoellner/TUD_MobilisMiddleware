@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn-students/AndroidMoco/!svn/ver/43/trunk/MobilisMedia/res/layout
+END
+tab_host.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/tab_host.xml
+END
+repository_item_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/repository_item_list.xml
+END
+send_media.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/send_media.xml
+END
+list_command.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/list_command.xml
+END
+media_transfer_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/media_transfer_notification.xml
+END
+media_transfer_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/media_transfer_row.xml
+END
+repository_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/repository_list.xml
+END
+list_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-students/AndroidMoco/!svn/ver/43/trunk/MobilisMedia/res/layout/list_title.xml
+END
+list_hashmap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/list_hashmap.xml
+END
+repository_map.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/repository_map.xml
+END
+media_transfer_manager.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisMedia/res/layout/media_transfer_manager.xml
+END

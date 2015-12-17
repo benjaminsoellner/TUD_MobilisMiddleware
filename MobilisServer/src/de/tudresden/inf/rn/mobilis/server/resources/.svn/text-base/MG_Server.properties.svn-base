@@ -1,0 +1,11 @@
+# Application global resources
+
+Application.name = MG_Server
+Application.title = Mobilis Server
+Application.version = 1.0
+Application.vendor = TU Dresden
+Application.homepage = http://www.tu-dresden.de
+Application.description = The mobilis server including Session Coordinator and Session Agent creation.
+Application.vendorId = TU Dresden
+Application.id = MG_Server
+Application.lookAndFeel = system

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="MobilisSettings.xsd">
+	<agents>
+		<agent name="buddy" description="Buddy Broker Service" type="de.tudresden.inf.rn.mobilis.server.agents.MobilisAgent">
+			<settings>
+				<setting name="host">10.0.0.1</setting>
+				<setting name="port">5222</setting>
+				<setting name="service">tintin</setting>
+				<setting name="username">mobilis</setting>
+				<setting name="password">mobilis</setting>
+				<setting name="resource">Buddy</setting>
+			</settings>
+		</agent>
+		<agent name="coordinator" description="Coordinator" type="de.tudresden.inf.rn.mobilis.server.agents.MobilisAgent">
+			<settings>
+				<setting name="host">10.0.0.1</setting>
+				<setting name="port">5222</setting>
+				<setting name="service">tintin</setting>
+				<setting name="username">mobilis</setting>
+				<setting name="password">mobilis</setting>
+				<setting name="resource">Coordinator</setting>
+			</settings>
+		</agent>
+		<agent name="collabediting" description="Collaborative Editing Broker Service" type="de.tudresden.inf.rn.mobilis.server.agents.MobilisAgent">
+			<settings>
+				<setting name="host">10.0.0.1</setting>
+				<setting name="port">5222</setting>
+				<setting name="service">tintin</setting>
+				<setting name="username">mobilis</setting>
+				<setting name="password">mobilis</setting>
+				<setting name="resource">CollabEditing</setting>
+			</settings>
+		</agent>
+		<agent name="content" description="Default Content Broker Service" type="de.tudresden.inf.rn.mobilis.server.agents.MobilisAgent">
+			<settings>
+				<setting name="host">10.0.0.1</setting>
+				<setting name="port">5222</setting>
+				<setting name="service">tintin</setting>
+				<setting name="username">mobilis</setting>
+				<setting name="password">mobilis</setting>
+				<setting name="resource">Content</setting>
+			</settings>
+		</agent>
+ 		<agent name="repository" description="Repository Broker Service" type="de.tudresden.inf.rn.mobilis.server.agents.MobilisAgent">
+			<settings>
+				<setting name="host">10.0.0.1</setting>
+				<setting name="port">5222</setting>
+				<setting name="service">tintin</setting>
+				<setting name="username">mobilis</setting>
+				<setting name="password">mobilis</setting>
+				<setting name="resource">Repository</setting>
+			</settings>
+		</agent>
+	</agents>
+	<services>
+		<service name="ContextService" description="Context Service" type="de.tudresden.inf.rn.mobilis.server.services.ContextService" agent="buddy" />
+		<service name="BuddyFinderService" description="Buddy Finder Service" type="de.tudresden.inf.rn.mobilis.server.services.BuddyFinderService" agent="buddy">
+			<settings>
+				<setting name="Radius">500</setting>
+				<setting name="Status">true</setting>
+			</settings>
+		</service>
+		<service name="SocialNetworkIntegrationService" description="Social Network Integration Service" type="de.tudresden.inf.rn.mobilis.server.services.SocialNetworkIntegrationService" agent="buddy" />
+		<service name="SessionService" description="Session Service" type="de.tudresden.inf.rn.mobilis.server.services.SessionService" agent="coordinator">
+			<settings>
+				<setting name="PubSubServer">pubsub.wpc</setting>
+				<setting name="PubSubNode">testnode0</setting>
+				<setting name="ChatRoomServer">conference.wpc</setting>
+			</settings>
+		</service>
+		<service name="CollabEditingService" description="Collaborative Editing Service" type="de.tudresden.inf.rn.mobilis.server.services.CollabEditingService" agent="collabediting">
+			<settings>
+				<setting name="ChatRoomServer">conference.wpc</setting>
+			</settings>
+		</service>
+		<service name="RepositoryService" description="Repository Service" type="de.tudresden.inf.rn.mobilis.server.services.media.RepositoryService" agent="repository">
+			<settings>
+				<setting name="ContentBroker">mobilis@tintin/Content</setting>
+				<setting name="Slices">
+					<setting name="taken">timestamp</setting>
+					<setting name="longitude_e6">integer</setting>
+					<setting name="latitude_e6">integer</setting>
+					<setting name="description">string</setting>
+					<setting name="title">string</setting>
+					<setting name="owner">string</setting>
+				</setting>
+			</settings>
+		</service>
+		<service name="ContentService" description="Default Content Service" type="de.tudresden.inf.rn.mobilis.server.services.media.ContentService" agent="content">
+			<settings>
+				<setting name="StorageFolder">store\ContentService</setting>
+			</settings>
+		</service>
+	</services>
+	<networks>
+		<network name="facebook" description="Facebook Integration Service" type="de.tudresden.inf.rn.mobilis.server.services.integration.FacebookIntegrationService">
+			<settings>
+				<setting name="apikey">193b0ef6780660b193b04407ddc84c27</setting>
+				<setting name="secret">5908a4bc82adcc3052b7e9ec1e738999</setting>
+				<setting name="trackable">false</setting>
+			</settings>
+		</network>
+		<network name="addressbook" description="Addressbook Integration Service" type="de.tudresden.inf.rn.mobilis.server.services.integration.DefaultIntegrationService">
+			<settings>
+				<setting name="trackable">false</setting>
+			</settings>
+		</network>
+		<network name="roster" description="Roster Integration Service" type="de.tudresden.inf.rn.mobilis.server.services.integration.DefaultIntegrationService">
+			<settings>
+				<setting name="trackable">true</setting>
+			</settings>
+		</network>
+	</networks>
+</config>

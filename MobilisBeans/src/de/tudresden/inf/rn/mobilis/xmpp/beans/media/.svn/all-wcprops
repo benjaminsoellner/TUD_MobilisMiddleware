@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media
+END
+ContentDeleteBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/ContentDeleteBean.java
+END
+ContentItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/ContentItemInfo.java
+END
+ContentRegisterBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/ContentRegisterBean.java
+END
+ContentTransferBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/ContentTransferBean.java
+END
+ContentUnregisterBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/ContentUnregisterBean.java
+END
+RepositoryDeleteBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/RepositoryDeleteBean.java
+END
+RepositoryItemInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/RepositoryItemInfo.java
+END
+RepositoryQueryBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-students/AndroidMoco/!svn/ver/76/trunk/MobilisBeans/src/de/tudresden/inf/rn/mobilis/xmpp/beans/media/RepositoryQueryBean.java
+END

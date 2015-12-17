@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server
+END
+SoXmlFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/SoXmlFile.java
+END
+ServerConnection_loadDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerConnection_loadDocument.java
+END
+ServerConnection_openDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerConnection_openDocument.java
+END
+ServerConnection_CStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerConnection_CStub.java
+END
+DocumentData.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/DocumentData.java
+END
+ServerConnection_uploadDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerConnection_uploadDocument.java
+END
+ServerConnection_joinSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerConnection_joinSession.java
+END
+SessionData.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/SessionData.java
+END
+ServerObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/server/ServerObject.java
+END

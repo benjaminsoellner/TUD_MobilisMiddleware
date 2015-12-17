@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services
+END
+MobilisAndroidService.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn-students/AndroidMoco/!svn/ver/48/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/MobilisAndroidService.java
+END
+CollabEditingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn-students/AndroidMoco/!svn/ver/58/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/CollabEditingService.java
+END
+ChattingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn-students/AndroidMoco/!svn/ver/48/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/ChattingService.java
+END
+SessionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn-students/AndroidMoco/!svn/ver/48/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/SessionService.java
+END
+GroupMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/GroupMember.java
+END
+GroupMemberService.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-students/AndroidMoco/!svn/ver/47/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/GroupMemberService.java
+END
+GroupManagementService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn-students/AndroidMoco/!svn/ver/48/trunk/MobilisMapDraw/src/de/tudresden/inf/rn/mobilis/android/services/GroupManagementService.java
+END

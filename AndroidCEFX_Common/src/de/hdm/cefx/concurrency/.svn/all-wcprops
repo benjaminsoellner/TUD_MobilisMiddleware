@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-students/AndroidMoco/!svn/ver/58/trunk/AndroidCEFX_Common/src/de/hdm/cefx/concurrency
+END
+AbstractConcurrencyControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/concurrency/AbstractConcurrencyControllerImpl.java
+END
+OrderingConcurrencyControllerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/concurrency/OrderingConcurrencyControllerImpl.java
+END
+ConcurrencyController.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-students/AndroidMoco/!svn/ver/47/trunk/AndroidCEFX_Common/src/de/hdm/cefx/concurrency/ConcurrencyController.java
+END

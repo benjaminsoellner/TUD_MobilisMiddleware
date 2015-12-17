@@ -1,0 +1,5 @@
+package de.tudresden.inf.rn.mobilis.media.core;
+
+public interface FileTransferRequestObserver {
+	public void requested(FileTransfer transfer);
+}

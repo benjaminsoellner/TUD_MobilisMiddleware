@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 15
+bin
+build
+dist
+
+K 13
+svn:mergeinfo
+V 37
+/branches/AndroidBuddy/MGServer:20-24
+END
